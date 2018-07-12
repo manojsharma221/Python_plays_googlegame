@@ -12,16 +12,16 @@ while 1:
     img=np.array(img)   #conveting the image to numpy arrays
     
     cv2.imshow('test', img) #just displaying the image
-    p_cac =img[28,:,0]     #storing the blue colour value of all pixels from 28th pixel 
-    p_bird =img[1,:,0]     # storing the blue colour value of all pixels from 1st pixel
+    p_cac =img[28,:,0]     #storing the blue colour's value of all pixels from 28th pixel 
+    p_bird =img[1,:,0]     # storing the blue colour's value of all pixels from 1st pixel
     
     #print (px)
     #print (py)
-    p_cac_sum=np.sum(p_cac)  #sum of all the bule values at 28 position
+    p_cac_sum=np.sum(p_cac)  #sum of all the bule values at 28th position
     p_bird_sum=np.sum(p_bird)
     print (p_cac_sum)
     
-#white=247 and grey =83	
+#white=247 and grey =83	(in my case)
     if p_cac_sum<24108:
      pyautogui.press('up')
     
